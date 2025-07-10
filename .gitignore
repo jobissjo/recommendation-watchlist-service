@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.env
+*.venv
+venv/
+env/
+ENV/
+.venv/
+.env
+.env.*
+
+# Tortoise ORM
+db.sqlite3
+*.db
+
+# Sanic logs
+*.log
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Migrations (if manual files are created)
+migrations/
+
+# Coverage / Testing
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+.cache/
+coverage.xml
+
+# Packaging
+build/
+dist/
+*.egg-info/
