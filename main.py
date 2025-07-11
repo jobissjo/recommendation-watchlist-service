@@ -19,7 +19,7 @@ app.ext.openapi.describe(
     description=dedent(
         """
         # Info
-        This is a description. It is a good place to add some _extra_ doccumentation.
+        This is a description. It is a good place to add some _extra_ documentation.
 
         **MARKDOWN** is supported.
         """
