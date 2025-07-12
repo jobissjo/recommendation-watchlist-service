@@ -18,6 +18,9 @@ class WatchListItemSchema(BaseModel):
 class WatchListResponseSchema(BaseResponseSchema):
     data: list[WatchListItemSchema]
 
+class WatchItemResponseSchema(BaseResponseSchema):
+    data: WatchListItemSchema
+
 
 class ErrorResponseSchema(BaseModel):
     success: bool = False

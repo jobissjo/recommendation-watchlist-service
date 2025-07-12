@@ -20,7 +20,9 @@ class WatchlistService:
     
     @staticmethod
     async def get_watchlist_item(item_id: str):
-        return await WatchlistRepository.get_watchlist_item(item_id)
+        item = await WatchlistRepository.get_watchlist_item(item_id)
+        pydantic_item = await WatchItemPydantic.from_tortoise_orm(item)
+        return pydantic_item.model_dump()
     
     @staticmethod
     async def update_watchlist_item(item_id: str, data: dict):
