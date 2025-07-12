@@ -13,3 +13,19 @@ class WatchlistService:
             pydantic_item = await WatchItemPydantic.from_tortoise_orm(item)
             serialized_items.append(pydantic_item.model_dump())
         return serialized_items
+    
+    @staticmethod
+    async def create_watchlist_item(data: dict):
+        return await WatchlistRepository.create_watchlist_item(data)
+    
+    @staticmethod
+    async def get_watchlist_item(item_id: str):
+        return await WatchlistRepository.get_watchlist_item(item_id)
+    
+    @staticmethod
+    async def update_watchlist_item(item_id: str, data: dict):
+        return await WatchlistRepository.update_watchlist_item(item_id, data)
+    
+    @staticmethod
+    async def delete_watchlist_item(item_id: str):
+        return await WatchlistRepository.delete_watchlist_item(item_id)
