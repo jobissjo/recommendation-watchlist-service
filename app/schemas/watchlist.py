@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 from uuid import UUID
-from typing import Optional, TypeVar, Generic
+from typing import Optional, TypeVar
 from app.schemas.common import BaseResponseSchema
 
 T = TypeVar("T", bound=BaseModel)

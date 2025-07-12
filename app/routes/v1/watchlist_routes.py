@@ -1,5 +1,4 @@
 from sanic import Blueprint
-from sanic.response import json
 from sanic_ext import openapi
 from app.schemas import  WatchListResponseSchema, WatchListItemSchema, WatchItemResponseSchema, BaseResponseSchema
 from app.services import WatchlistService
